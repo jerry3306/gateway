@@ -1,0 +1,973 @@
+2021-04-11 06:03:36 pid:38 Workerman[start.php] start in DEBUG mode
+2021-04-11 06:03:48 pid:38 Workerman[start.php] stopping ...
+2021-04-11 06:03:48 pid:38 Workerman[start.php] has been stopped
+2021-04-11 06:04:03 pid:48 Workerman[start.php] start in DEBUG mode
+2021-04-11 06:04:07 pid:48 Workerman[start.php] stopping ...
+2021-04-11 06:04:07 pid:48 Workerman[start.php] has been stopped
+2021-04-11 06:04:09 pid:58 Workerman[start.php] start in DAEMON mode
+2021-04-11 06:04:23 pid:64 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #39)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(542): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2021-04-11 06:04:23 pid:64 Worker[64] process terminated
+2021-04-11 06:04:23 pid:60 worker[YourAppBusinessWorker:64] exit with status 64000
+2021-04-11 06:04:27 pid:72 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #40)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:04:27 pid:72 Worker[72] process terminated
+2021-04-11 06:04:27 pid:60 worker[YourAppBusinessWorker:72] exit with status 64000
+2021-04-11 06:04:28 pid:62 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(542): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2021-04-11 06:04:28 pid:62 Worker[62] process terminated
+2021-04-11 06:04:28 pid:60 worker[YourAppBusinessWorker:62] exit with status 64000
+2021-04-11 06:26:46 pid:78 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #43)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:46 pid:78 Worker[78] process terminated
+2021-04-11 06:26:46 pid:60 worker[YourAppBusinessWorker:78] exit with status 64000
+2021-04-11 06:26:46 pid:75 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #40)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:46 pid:75 Worker[75] process terminated
+2021-04-11 06:26:46 pid:60 worker[YourAppBusinessWorker:75] exit with status 64000
+2021-04-11 06:26:47 pid:84 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #46)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:47 pid:84 Worker[84] process terminated
+2021-04-11 06:26:47 pid:60 worker[YourAppBusinessWorker:84] exit with status 64000
+2021-04-11 06:26:47 pid:61 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(542): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2021-04-11 06:26:47 pid:61 Worker[61] process terminated
+2021-04-11 06:26:47 pid:60 worker[YourAppBusinessWorker:61] exit with status 64000
+2021-04-11 06:26:48 pid:63 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #39)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(542): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#11 {main}
+2021-04-11 06:26:48 pid:63 Worker[63] process terminated
+2021-04-11 06:26:48 pid:60 worker[YourAppBusinessWorker:63] exit with status 64000
+2021-04-11 06:26:51 pid:90 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #48)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:51 pid:90 Worker[90] process terminated
+2021-04-11 06:26:51 pid:60 worker[YourAppBusinessWorker:90] exit with status 64000
+2021-04-11 06:26:52 pid:96 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #47)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:52 pid:96 Worker[96] process terminated
+2021-04-11 06:26:52 pid:60 worker[YourAppBusinessWorker:96] exit with status 64000
+2021-04-11 06:26:52 pid:99 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #49)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:52 pid:99 Worker[99] process terminated
+2021-04-11 06:26:52 pid:60 worker[YourAppBusinessWorker:99] exit with status 64000
+2021-04-11 06:26:53 pid:87 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #47)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:53 pid:87 Worker[87] process terminated
+2021-04-11 06:26:53 pid:60 worker[YourAppBusinessWorker:87] exit with status 64000
+2021-04-11 06:26:53 pid:93 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #46)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:53 pid:93 Worker[93] process terminated
+2021-04-11 06:26:53 pid:60 worker[YourAppBusinessWorker:93] exit with status 64000
+2021-04-11 06:26:53 pid:102 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:53 pid:102 Worker[102] process terminated
+2021-04-11 06:26:53 pid:60 worker[YourAppBusinessWorker:102] exit with status 64000
+2021-04-11 06:26:53 pid:108 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #52)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:53 pid:108 Worker[108] process terminated
+2021-04-11 06:26:53 pid:60 worker[YourAppBusinessWorker:108] exit with status 64000
+2021-04-11 06:26:54 pid:105 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:54 pid:105 Worker[105] process terminated
+2021-04-11 06:26:54 pid:60 worker[YourAppBusinessWorker:105] exit with status 64000
+2021-04-11 06:26:54 pid:114 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:54 pid:114 Worker[114] process terminated
+2021-04-11 06:26:54 pid:60 worker[YourAppBusinessWorker:114] exit with status 64000
+2021-04-11 06:26:54 pid:81 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #44)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:54 pid:81 Worker[81] process terminated
+2021-04-11 06:26:54 pid:60 worker[YourAppBusinessWorker:81] exit with status 64000
+2021-04-11 06:26:54 pid:117 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:54 pid:117 Worker[117] process terminated
+2021-04-11 06:26:54 pid:60 worker[YourAppBusinessWorker:117] exit with status 64000
+2021-04-11 06:26:54 pid:111 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #53)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:54 pid:111 Worker[111] process terminated
+2021-04-11 06:26:54 pid:60 worker[YourAppBusinessWorker:111] exit with status 64000
+2021-04-11 06:26:54 pid:120 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #57)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:54 pid:120 Worker[120] process terminated
+2021-04-11 06:26:54 pid:60 worker[YourAppBusinessWorker:120] exit with status 64000
+2021-04-11 06:26:55 pid:132 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #59)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:55 pid:132 Worker[132] process terminated
+2021-04-11 06:26:55 pid:60 worker[YourAppBusinessWorker:132] exit with status 64000
+2021-04-11 06:26:55 pid:126 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #59)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:55 pid:126 Worker[126] process terminated
+2021-04-11 06:26:55 pid:60 worker[YourAppBusinessWorker:126] exit with status 64000
+2021-04-11 06:26:56 pid:138 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #64)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:26:56 pid:138 Worker[138] process terminated
+2021-04-11 06:26:56 pid:60 worker[YourAppBusinessWorker:138] exit with status 64000
+2021-04-11 06:27:09 pid:123 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #56)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:27:09 pid:123 Worker[123] process terminated
+2021-04-11 06:27:09 pid:60 worker[YourAppBusinessWorker:123] exit with status 64000
+2021-04-11 06:27:10 pid:135 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #62)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:27:10 pid:135 Worker[135] process terminated
+2021-04-11 06:27:10 pid:60 worker[YourAppBusinessWorker:135] exit with status 64000
+2021-04-11 06:27:11 pid:141 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #62)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:27:11 pid:141 Worker[141] process terminated
+2021-04-11 06:27:11 pid:60 worker[YourAppBusinessWorker:141] exit with status 64000
+2021-04-11 06:27:12 pid:129 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #60)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 06:27:12 pid:129 Worker[129] process terminated
+2021-04-11 06:27:12 pid:60 worker[YourAppBusinessWorker:129] exit with status 64000
+2021-04-11 08:54:23 pid:144 Error: Object of class Workerman\Protocols\Http\Request could not be converted to string in /www/GatewayWorker/Applications/YourApp/Events.php:53
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#1 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', Object(Workerman\Protocols\Http\Request))
+#2 /www/GatewayWorker/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /www/GatewayWorker/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #63)
+#4 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/GatewayWorker/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /www/GatewayWorker/vendor/workerman/workerman/Worker.php(544): Workerman\Worker::monitorWorkers()
+#12 /www/GatewayWorker/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2021-04-11 08:54:23 pid:144 Worker[144] process terminated
+2021-04-11 08:54:23 pid:60 worker[YourAppBusinessWorker:144] exit with status 64000
+2021-04-11 08:54:32 pid:158 Workerman[start.php] stop 
+2021-04-11 08:54:32 pid:158 Workerman[start.php] is stopping ...
+2021-04-11 08:54:32 pid:60 Workerman[start.php] stopping ...
+2021-04-11 08:54:32 pid:60 Workerman[start.php] has been stopped
+2021-04-11 08:54:32 pid:158 Workerman[start.php] stop success
+2021-04-11 08:54:34 pid:159 Workerman[start.php] start in DEBUG mode
+2021-04-11 10:55:37 pid:159 Workerman[start.php] stopping ...
+2021-04-11 10:55:37 pid:159 Workerman[start.php] has been stopped
+2021-04-11 11:26:50 pid:250 Workerman[start.php] status 
+2021-04-11 11:26:50 pid:250 Workerman[start.php] not run
+2021-04-11 11:26:54 pid:251 Workerman[start.php] start in DEBUG mode
+2021-04-11 11:26:54 pid:251 worker[Register:252] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:262] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:263] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:264] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:265] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:266] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:267] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:268] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:269] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:270] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:271] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:272] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:273] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:274] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:275] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:276] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:277] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:278] exit with status 65280
+2021-04-11 11:26:54 pid:251 worker[Register:279] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:280] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:281] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:282] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:283] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:284] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:285] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:286] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:287] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:288] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:289] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:290] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:291] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:292] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:293] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:294] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:295] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:296] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:297] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:298] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:299] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:300] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:301] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:302] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:303] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:304] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:305] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:306] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:307] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:308] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:309] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:310] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:311] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:312] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:313] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:314] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:315] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:316] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:317] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:318] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:319] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:320] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:321] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:322] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:323] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:324] exit with status 65280
+2021-04-11 11:26:55 pid:251 worker[Register:325] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:326] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:327] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:328] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:329] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:330] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:331] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:332] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:333] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:334] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:335] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:336] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:337] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:338] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:339] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:340] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:341] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:342] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:343] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:344] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:345] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:346] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:347] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:348] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:349] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:350] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:351] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:352] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:353] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:354] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:355] exit with status 65280
+2021-04-11 11:26:56 pid:251 worker[Register:356] exit with status 65280
+2021-04-11 11:26:56 pid:251 Workerman[start.php] stopping ...
+2021-04-11 11:26:56 pid:251 worker[Register:357] exit with status 65280
+2021-04-11 11:26:56 pid:251 Workerman[start.php] has been stopped
+2021-04-11 11:43:31 pid:376 Workerman[start.php] start in DEBUG mode
+2021-04-11 11:44:00 pid:376 Workerman[start.php] stopping ...
+2021-04-11 11:44:00 pid:376 Workerman[start.php] has been stopped
+2021-04-11 11:44:57 pid:387 Workerman[start.php] start in DEBUG mode
+2021-04-11 11:45:08 pid:387 Workerman[start.php] stopping ...
+2021-04-11 11:45:08 pid:387 Workerman[start.php] has been stopped
+2021-04-11 11:47:38 pid:398 Workerman[start.php] start in DEBUG mode
+2021-04-11 11:47:43 pid:398 Workerman[start.php] stopping ...
+2021-04-11 11:47:43 pid:398 Workerman[start.php] has been stopped
+2021-04-11 11:48:54 pid:409 Workerman[start.php] start in DEBUG mode
+2021-04-11 11:54:50 pid:409 Workerman[start.php] stopping ...
+2021-04-11 11:54:50 pid:409 Workerman[start.php] has been stopped
+2021-04-11 11:57:03 pid:421 Workerman[start.php] start in DEBUG mode
+2021-04-11 11:57:06 pid:421 Workerman[start.php] stopping ...
+2021-04-11 11:57:06 pid:421 Workerman[start.php] has been stopped
+2021-04-11 11:59:39 pid:432 Workerman[start.php] start in DEBUG mode
+2021-04-11 11:59:45 pid:432 Workerman[start.php] stopping ...
+2021-04-11 11:59:45 pid:432 Workerman[start.php] has been stopped
+2021-04-11 12:00:17 pid:443 Workerman[start.php] start in DEBUG mode
+2021-04-11 12:00:21 pid:443 Workerman[start.php] stopping ...
+2021-04-11 12:00:21 pid:443 Workerman[start.php] has been stopped
+2021-04-11 12:01:24 pid:454 Workerman[start.php] start in DEBUG mode
+2021-04-11 12:01:34 pid:454 Workerman[start.php] stopping ...
+2021-04-11 12:01:34 pid:454 Workerman[start.php] has been stopped
+2021-04-11 12:01:37 pid:465 Workerman[start.php] start in DAEMON mode
+2021-04-11 12:03:22 pid:486 Workerman[start.php] stop 
+2021-04-11 12:03:22 pid:486 Workerman[start.php] is stopping ...
+2021-04-11 12:03:22 pid:467 Workerman[start.php] stopping ...
+2021-04-11 12:03:22 pid:467 Workerman[start.php] has been stopped
+2021-04-11 12:03:22 pid:486 Workerman[start.php] stop success
+2021-04-11 12:03:30 pid:487 Workerman[start.php] start in DEBUG mode
+2021-04-11 12:03:35 pid:487 Workerman[start.php] stopping ...
+2021-04-11 12:03:35 pid:487 Workerman[start.php] has been stopped
+2021-04-11 12:03:38 pid:498 Workerman[start.php] start in DEBUG mode
+2021-04-11 12:03:41 pid:498 Workerman[start.php] stopping ...
+2021-04-11 12:03:41 pid:498 Workerman[start.php] has been stopped
+2021-04-11 12:04:09 pid:509 Workerman[start.php] start in DEBUG mode
+2021-04-11 12:04:09 pid:509 worker[Register:520] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:521] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:524] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:522] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:525] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:526] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:528] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:527] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:529] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:530] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:532] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:533] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:531] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:534] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:535] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:536] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:537] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:538] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:540] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:539] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:541] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:542] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:543] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:544] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:545] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:546] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:547] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:548] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:549] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:550] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:551] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:552] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:553] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:554] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:555] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:556] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:557] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:558] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:559] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:560] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:561] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:562] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:563] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[Register:565] exit with status 65280
+2021-04-11 12:04:10 pid:509 worker[none:564] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:566] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[none:568] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:567] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[none:570] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:569] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:571] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:573] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[none:572] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:574] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:575] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:577] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[none:576] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:578] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:579] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[none:580] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:582] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:581] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[none:583] exit with status 65280
+2021-04-11 12:04:11 pid:509 Workerman[start.php] stopping ...
+2021-04-11 12:04:11 pid:509 worker[Register:585] exit with status 11
+2021-04-11 12:04:11 pid:509 worker[none:586] exit with status 65280
+2021-04-11 12:04:11 pid:509 worker[Register:584] exit with status 65280
+2021-04-11 12:04:11 pid:509 Workerman[start.php] has been stopped
+2021-04-11 12:08:00 pid:590 Workerman[start.php] start in DEBUG mode
+2021-04-11 12:08:03 pid:590 Workerman[start.php] stopping ...
+2021-04-11 12:08:03 pid:590 Workerman[start.php] has been stopped
+2021-04-11 12:08:05 pid:601 Workerman[start.php] start in DAEMON mode
+2021-04-11 12:08:31 pid:616 Workerman[start.php] stop 
+2021-04-11 12:08:31 pid:616 Workerman[start.php] is stopping ...
+2021-04-11 12:08:31 pid:603 Workerman[start.php] stopping ...
+2021-04-11 12:08:31 pid:603 Workerman[start.php] has been stopped
+2021-04-11 12:08:31 pid:616 Workerman[start.php] stop success
+2021-04-11 12:14:55 pid:617 Workerman[start.php] start in DAEMON mode
+2021-04-11 12:16:03 pid:632 Workerman[start.php] start in DAEMON mode
+2021-04-11 12:16:03 pid:632 Workerman[start.php] already running
+2021-04-11 12:22:13 pid:633 Workerman[start.php] stop 
+2021-04-11 12:22:13 pid:633 Workerman[start.php] is stopping ...
+2021-04-11 12:22:13 pid:619 Workerman[start.php] stopping ...
+2021-04-11 12:22:13 pid:619 Workerman[start.php] has been stopped
+2021-04-11 12:22:13 pid:633 Workerman[start.php] stop success
+2021-04-11 12:22:23 pid:634 Workerman[start.php] start in DEBUG mode
+2021-04-11 12:22:23 pid:634 worker[Register:646] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:645] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[none:647] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:649] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:650] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:652] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:653] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[none:651] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:654] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:655] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:657] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[none:656] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:658] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:659] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[none:660] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:661] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:662] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[none:663] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:664] exit with status 65280
+2021-04-11 12:22:23 pid:634 worker[Register:665] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:666] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:667] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:668] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:670] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:669] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:671] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:672] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:673] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:675] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:674] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:678] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:677] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:676] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:679] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:682] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:680] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:681] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:684] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:683] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:686] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:685] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:687] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:688] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:690] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:689] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:691] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:692] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:693] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:694] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:695] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:697] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:696] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:698] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:701] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:699] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:700] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:703] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:702] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:705] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:704] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:706] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:707] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:709] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:708] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:710] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:711] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:713] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:714] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:712] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:716] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:715] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:717] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:718] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:719] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:721] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:720] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:722] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:723] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:725] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[none:724] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:727] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:726] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:729] exit with status 65280
+2021-04-11 12:22:24 pid:634 worker[Register:730] exit with status 65280
+2021-04-11 12:22:25 pid:634 worker[none:728] exit with status 65280
+2021-04-11 12:22:25 pid:634 worker[Register:731] exit with status 65280
+2021-04-11 12:22:25 pid:634 worker[Register:732] exit with status 65280
+2021-04-11 12:22:25 pid:634 Workerman[start.php] stopping ...
+2021-04-11 12:22:25 pid:634 worker[Register:734] exit with status 65280
+2021-04-11 12:22:25 pid:634 worker[Register:735] exit with status 65280
+2021-04-11 12:22:25 pid:634 worker[none:733] exit with status 65280
+2021-04-11 12:22:25 pid:634 Workerman[start.php] has been stopped
+2021-04-11 12:27:36 pid:744 Workerman[start.php] start in DEBUG mode
+2021-04-11 12:27:43 pid:744 Workerman[start.php] stopping ...
+2021-04-11 12:27:43 pid:744 Workerman[start.php] has been stopped
+2021-04-11 12:27:46 pid:765 Workerman[start.php] start in DAEMON mode
+2021-04-11 12:33:13 pid:793 Workerman[start.php] stop 
+2021-04-11 12:33:14 pid:793 Workerman[start.php] is stopping ...
+2021-04-11 12:33:14 pid:767 Workerman[start.php] stopping ...
+2021-04-11 12:33:14 pid:767 Workerman[start.php] has been stopped
+2021-04-11 12:33:14 pid:793 Workerman[start.php] stop success
+2021-04-11 12:33:22 pid:794 Workerman[start.php] start in DAEMON mode
+2021-04-11 12:33:33 pid:817 Workerman[start.php] status 
+2021-04-11 12:47:36 pid:853 Workerman[start.php] stop 
+2021-04-11 12:47:36 pid:853 Workerman[start.php] is stopping ...
+2021-04-11 12:47:36 pid:796 Workerman[start.php] stopping ...
+2021-04-11 12:47:37 pid:796 Workerman[start.php] has been stopped
+2021-04-11 12:47:37 pid:853 Workerman[start.php] stop success
+2021-04-11 12:47:41 pid:854 Workerman[start.php] start in DEBUG mode
+2021-04-11 14:18:13 pid:854 Workerman[start.php] stopping ...
+2021-04-11 14:18:13 pid:854 Workerman[start.php] has been stopped
+2021-04-11 14:18:16 pid:875 Workerman[start.php] start in DAEMON mode
+2021-04-11 14:24:33 pid:903 Workerman[start.php] status 
+2021-04-11 14:25:48 pid:904 Workerman[start.php] stop 
+2021-04-11 14:25:48 pid:904 Workerman[start.php] is stopping ...
+2021-04-11 14:25:48 pid:877 Workerman[start.php] stopping ...
+2021-04-11 14:25:48 pid:877 Workerman[start.php] has been stopped
+2021-04-11 14:25:48 pid:904 Workerman[start.php] stop success
+2021-04-11 14:25:56 pid:905 Workerman[start.php] status 
+2021-04-11 14:25:56 pid:905 Workerman[start.php] not run
+2021-04-11 14:26:00 pid:906 Workerman[start.php] start in DEBUG mode
+2021-04-11 14:33:06 pid:906 Workerman[start.php] stopping ...
+2021-04-11 14:33:06 pid:906 Workerman[start.php] has been stopped
+2021-04-11 14:33:07 pid:927 Workerman[start.php] status 
+2021-04-11 14:33:07 pid:927 Workerman[start.php] not run
+2021-04-11 14:33:09 pid:928 Workerman[start.php] start in DEBUG mode
+2021-04-11 14:34:41 pid:928 Workerman[start.php] stopping ...
+2021-04-11 14:34:41 pid:928 Workerman[start.php] has been stopped
+2021-04-11 14:39:49 pid:943 Workerman[start.php] start in DEBUG mode
+2021-04-11 14:40:19 pid:943 Workerman[start.php] stopping ...
+2021-04-11 14:40:19 pid:943 Workerman[start.php] has been stopped
+2021-04-11 14:42:52 pid:968 Workerman[start.php] start in DEBUG mode
+2021-04-11 14:47:51 pid:968 Workerman[start.php] stopping ...
+2021-04-11 14:47:52 pid:968 Workerman[start.php] has been stopped
+2021-04-11 14:48:14 pid:979 Workerman[start.php] start in DEBUG mode
+2021-04-11 14:48:25 pid:979 Workerman[start.php] stopping ...
+2021-04-11 14:48:25 pid:979 Workerman[start.php] has been stopped
+2021-04-11 14:48:26 pid:989 Workerman[start.php] start in DEBUG mode
+2021-04-11 14:52:23 pid:989 Workerman[start.php] stopping ...
+2021-04-11 14:52:23 pid:989 Workerman[start.php] has been stopped
+2021-04-11 14:52:29 pid:999 Workerman[start.php] start in DAEMON mode
+2021-04-11 14:52:49 pid:1022 Workerman[start.php] stop 
+2021-04-11 14:52:49 pid:1022 Workerman[start.php] is stopping ...
+2021-04-11 14:52:49 pid:1001 Workerman[start.php] stopping ...
+2021-04-11 14:52:49 pid:1001 Workerman[start.php] has been stopped
+2021-04-11 14:52:49 pid:1022 Workerman[start.php] stop success
+2021-04-11 14:53:13 pid:1023 Workerman[start.php] start in DEBUG mode
+2021-04-11 14:53:22 pid:1023 Workerman[start.php] stopping ...
+2021-04-11 14:53:22 pid:1023 Workerman[start.php] has been stopped
+2021-04-11 14:53:23 pid:1042 Workerman[start.php] start in DAEMON mode
+2021-04-11 14:53:52 pid:1065 Workerman[start.php] stop 
+2021-04-11 14:53:52 pid:1065 Workerman[start.php] is stopping ...
+2021-04-11 14:53:52 pid:1044 Workerman[start.php] stopping ...
+2021-04-11 14:53:52 pid:1044 Workerman[start.php] has been stopped
+2021-04-11 14:53:52 pid:1065 Workerman[start.php] stop success
+2021-04-11 14:53:57 pid:1066 Workerman[start.php] start in DAEMON mode
+2021-04-11 15:01:09 pid:1093 Workerman[start.php] status 
+2021-04-11 15:37:03 pid:1071 Exception: You can't send(array) to client, you need to convert it to a string.  in /www/gateway/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /www/gateway/vendor/workerman/workerman/Connection/TcpConnection.php(321): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /www/gateway/vendor/workerman/gateway-worker/src/Gateway.php(614): Workerman\Connection\TcpConnection->send(Array, false)
+#2 /www/gateway/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /www/gateway/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #74)
+#4 /www/gateway/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/gateway/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#6 /www/gateway/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\Gateway->run()
+#7 /www/gateway/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#8 /www/gateway/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/gateway/vendor/workerman/workerman/Worker.php(542): Workerman\Worker::forkWorkers()
+#10 /www/gateway/start.php(15): Workerman\Worker::runAll()
+#11 /www/gateway/start.php(18): lib\gateway\main()
+#12 {main}
+2021-04-11 15:37:03 pid:1071 Worker[1071] process terminated
+2021-04-11 15:37:03 pid:1068 worker[ws_gateway:1071] exit with status 64000
+2021-04-11 15:37:12 pid:1072 Exception: You can't send(array) to client, you need to convert it to a string.  in /www/gateway/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /www/gateway/vendor/workerman/workerman/Connection/TcpConnection.php(321): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /www/gateway/vendor/workerman/gateway-worker/src/Gateway.php(614): Workerman\Connection\TcpConnection->send(Array, false)
+#2 /www/gateway/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /www/gateway/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #76)
+#4 /www/gateway/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/gateway/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#6 /www/gateway/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\Gateway->run()
+#7 /www/gateway/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#8 /www/gateway/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/gateway/vendor/workerman/workerman/Worker.php(542): Workerman\Worker::forkWorkers()
+#10 /www/gateway/start.php(15): Workerman\Worker::runAll()
+#11 /www/gateway/start.php(18): lib\gateway\main()
+#12 {main}
+2021-04-11 15:37:13 pid:1072 Worker[1072] process terminated
+2021-04-11 15:37:13 pid:1068 worker[ws_gateway:1072] exit with status 64000
+2021-04-11 15:38:49 pid:1070 Exception: You can't send(array) to client, you need to convert it to a string.  in /www/gateway/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /www/gateway/vendor/workerman/workerman/Connection/TcpConnection.php(321): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /www/gateway/vendor/workerman/gateway-worker/src/Gateway.php(614): Workerman\Connection\TcpConnection->send(Array, false)
+#2 /www/gateway/vendor/workerman/workerman/Connection/TcpConnection.php(637): GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /www/gateway/vendor/workerman/workerman/Events/Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #86)
+#4 /www/gateway/vendor/workerman/workerman/Worker.php(2430): Workerman\Events\Select->loop()
+#5 /www/gateway/vendor/workerman/gateway-worker/src/Gateway.php(276): Workerman\Worker->run()
+#6 /www/gateway/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\Gateway->run()
+#7 /www/gateway/vendor/workerman/workerman/Worker.php(1385): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\Gateway))
+#8 /www/gateway/vendor/workerman/workerman/Worker.php(1359): Workerman\Worker::forkWorkersForLinux()
+#9 /www/gateway/vendor/workerman/workerman/Worker.php(542): Workerman\Worker::forkWorkers()
+#10 /www/gateway/start.php(15): Workerman\Worker::runAll()
+#11 /www/gateway/start.php(18): lib\gateway\main()
+#12 {main}
+2021-04-11 15:38:49 pid:1070 Worker[1070] process terminated
+2021-04-11 15:38:49 pid:1068 worker[ws_gateway:1070] exit with status 64000
+2021-04-11 16:32:15 pid:1105 Workerman[start.php] stop 
+2021-04-11 16:32:15 pid:1105 Workerman[start.php] is stopping ...
+2021-04-11 16:32:15 pid:1068 Workerman[start.php] stopping ...
+2021-04-11 16:32:15 pid:1068 Workerman[start.php] has been stopped
+2021-04-11 16:32:15 pid:1105 Workerman[start.php] stop success
+2021-04-11 16:32:31 pid:1106 Workerman[start.php] start in DEBUG mode
+2021-04-11 16:32:38 pid:1106 Workerman[start.php] stopping ...
+2021-04-11 16:32:38 pid:1106 Workerman[start.php] has been stopped
+2021-04-11 16:46:40 pid:1125 Workerman[start.php] stop 
+2021-04-11 16:46:40 pid:1125 Workerman[start.php] not run
+2021-04-11 16:46:46 pid:1126 Workerman[start.php] start in DAEMON mode
