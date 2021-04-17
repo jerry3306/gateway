@@ -42,6 +42,8 @@ class Server
             if(!$this->checkPosixExt()){
                 exit('Please install posix extension. See http://doc3.workerman.net/appendices/install-extension.html'."\n");
             }
+        }else{
+            exit('Please use Linux Running'."\n");
         }
     }
 
