@@ -1,5 +1,5 @@
 <?php
-namespace lib\gateway;
+namespace gateway;
 
 use GatewayWorker\Gateway;
 use Workerman\Worker;
